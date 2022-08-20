@@ -19,7 +19,8 @@ document.getElementById('deposit-btn').addEventListener('click', function make_d
 
 document.getElementById('withdraw-btn').addEventListener('click', function make_withdraw() {
     let initWithd = parseInt(withdrawField.value);
-    withdraw.innerText = initWithd;
+    let lastWithd = parseInt(withdraw.innerText)+initWithd;
+    withdraw.innerText = lastWithd;
     let lastBal = parseInt(balance.innerText) - initWithd;
     if (lastBal < 0) {
         alert('Insufficient Balance!');
