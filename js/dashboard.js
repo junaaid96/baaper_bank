@@ -18,12 +18,11 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
     if (initDepo < 0) {
         alert('Enter a positive Number!');
         return;
-    }
-
-    if (isNaN(lastBal)) {
+    } else if (isNaN(lastBal)) {
         alert('Enter a valid number');
         return;
     }
+
     deposit.innerText = lastDepo;
     balance.innerText = lastBal;
 })
@@ -37,12 +36,11 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
     if (lastBal < 0) {
         alert('Insufficient Balance!');
         return;
-    }
-
-    if (isNaN(lastBal)) {
+    } else if (isNaN(lastBal)) {
         alert('Enter a valid number');
         return;
     }
+
     withdraw.innerText = lastWithd;
     balance.innerText = lastBal;
 })
