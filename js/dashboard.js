@@ -9,11 +9,11 @@ const withdrawField = document.getElementById('withdraw-area');
 
 
 document.getElementById('deposit-btn').addEventListener('click', function make_deposit() {
-    let initDepo = parseInt(depositField.value);
-    let lastDepo = parseInt(deposit.innerText) + initDepo;
+    const initDepo = parseInt(depositField.value);
+    const lastDepo = parseInt(deposit.innerText) + initDepo;
     
-    let initBal = parseInt(depositField.value);
-    let lastBal = parseInt(balance.innerText) + initBal;
+    const initBal = parseInt(depositField.value);
+    const lastBal = parseInt(balance.innerText) + initBal;
     
     depositField.value = '';
 
@@ -31,9 +31,9 @@ document.getElementById('deposit-btn').addEventListener('click', function make_d
 })
 
 document.getElementById('withdraw-btn').addEventListener('click', function make_withdraw() {
-    let initWithd = parseInt(withdrawField.value);
-    let lastBal = parseInt(balance.innerText) - initWithd;
-    let lastWithd = parseInt(withdraw.innerText)+initWithd;
+    const initWithd = parseInt(withdrawField.value);
+    const lastBal = parseInt(balance.innerText) - initWithd;
+    const lastWithd = parseInt(withdraw.innerText)+initWithd;
     withdrawField.value = ''; // clear input
 
     if (lastBal < 0) {
