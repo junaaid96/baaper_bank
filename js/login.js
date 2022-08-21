@@ -1,5 +1,3 @@
-// login
-
 const emailField = document.getElementById('user-email');
 const passwordField = document.getElementById('user-pass');
 // const loginSuccess = document.getElementById('login-a');
